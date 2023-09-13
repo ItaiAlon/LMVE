@@ -68,7 +68,7 @@ def main(database_name, calibration_ratio=0.1, test_ratio=0.1, n_neighbors=1., s
     start_time = time.time()
     reset_seed(seed)
 
-    recovery_folder = f'./run/recovery/{database_name}/{seed}'
+    recovery_folder = f'./recovery/{database_name}/{seed}'
     if not os.path.exists(recovery_folder):
         os.makedirs(recovery_folder, exist_ok=True)
 
